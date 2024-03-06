@@ -17,6 +17,7 @@ djangorestframework = "^3.14.0"
 DJANGO_SETTINGS_MODULE = "bookstore.settings"
 
 
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
