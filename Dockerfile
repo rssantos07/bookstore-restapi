@@ -38,9 +38,11 @@ RUN apt-get update \
 
 RUN pip install poetry
 
+
 RUN apt-get update \
     && apt-get -y install libpq-dev gcc \
-    && pip install psycopg2
+    && pip install psycopg2 django django-extensions
+
 
 # copy project requirement files here to ensure they will be cached.
 WORKDIR $PYSETUP_PATH
