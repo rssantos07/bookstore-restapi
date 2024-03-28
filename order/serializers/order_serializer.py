@@ -30,4 +30,3 @@ class OrderSerializer(serializers.ModelSerializer):
             order.product.add(product)
 
         return order, 'total'
-
