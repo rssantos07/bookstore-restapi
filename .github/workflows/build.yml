@@ -21,6 +21,7 @@ jobs:
 
     - name: Install poetry
       run: |
+        python -m ensurepip
         python -m pip install --upgrade pip
         python -m pip install --upgrade poetry
 
@@ -29,7 +30,7 @@ jobs:
 
     - name: Install dependencies
       shell: bash
-      run: poetry install
+      run: python -m poetry install
 
     - name: Test
       run: |
