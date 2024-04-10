@@ -41,7 +41,9 @@ RUN pip install poetry
 
 RUN apt-get update \
     && apt-get -y install libpq-dev gcc \
-    && pip install psycopg2 django django-extensions
+    && pip install psycopg2 django django-extensions --no-cache-dir \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 
 # copy project requirement files here to ensure they will be cached.
@@ -49,10 +51,10 @@ WORKDIR $PYSETUP_PATH
 COPY poetry.lock pyproject.toml ./
 
 # install runtime deps - uses $POETRY_VIRTUALENVS_IN_PROJECT internally
-RUN poetry install --no-dev
 
-# quicker install as runtime deps are already installed
-RUN poetry install
+RUN poetry install --no-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
