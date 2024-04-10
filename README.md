@@ -5,7 +5,7 @@ Bookstore APP from Backend Python course from EBAC
 ## Prerequisites
 
 ```
-Python 3.5>
+Python 3.8 >
 Poetry
 Docker && docker-compose
 
@@ -16,7 +16,7 @@ Docker && docker-compose
 1. Clone this project
 
    ```shell
-   git clone git@github.com:drsantos20/bookstore.git
+   git clone git@github.com:rssantos07/bookstore-restapi.git
    ```
 
 2. Install dependencies:
@@ -45,3 +45,4 @@ Docker && docker-compose
    ```shell
    docker-compose exec web python manage.py test
    ```
+

@@ -29,4 +29,4 @@ class OrderSerializer(serializers.ModelSerializer):
         for product in product_data:
             order.product.add(product)
 
-        return order, 'total'
+        return order
