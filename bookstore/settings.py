@@ -28,7 +28,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 'api-bookstore-ebac-4d526a94cc01.herokuapp.com/']
+                 'api-bookstore-ebac-4d526a94cc01.herokuapp.com']
 
 
 # Application definition
