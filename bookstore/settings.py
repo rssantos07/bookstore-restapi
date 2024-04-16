@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-f*k@=53bc5!shef1-6w+m$-g)kspbaljz%8k4(j7iuc-u2_dyd"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'api-bookstore-ebac-4d526a94cc01.herokuapp.com', 'rssantos07.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rssantos07.pythonanywhere.com']
 
 
 # Application definition
