@@ -1,4 +1,5 @@
 import debug_toolbar
+from bookstore import views
 from django.contrib import admin
 from django.urls import path, re_path, include
 from rest_framework.authtoken.views import obtain_auth_token
